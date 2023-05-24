@@ -1,0 +1,195 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+
+body{
+    /* se utiliza por ejemplo para colores generales, tipografias, tamaños generales... */   
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color: burlywood;
+
+}
+
+/*  estilos de mi header */
+header{
+    background-color:rgb(98, 23, 23);
+    text-align: center;
+    font-size: 20px;  
+    display: flex;  
+    justify-content: space-between;
+    align-items: end;
+    padding: 20px;
+
+}
+
+
+.nav-color{
+    background-color:rgb(98, 23, 23); ;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left: 30px;
+    padding: 5px;
+    text-align: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: beige;
+    display: inline-block;
+    text-align: center;
+}
+
+/* estilos de mi main  */
+
+main{
+    text-align: center;
+    text-decoration: double;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+main div.contenedor{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1.5fr;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    background-image: url("../img/torta-fondo.jpg");
+    background-size: cover;
+}
+
+main div.contenedor ul li{
+    display: grid;
+    grid-template-rows: 2fr 2fr;   
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+}
+
+
+main div p{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    margin: 20px;
+
+}
+
+main div ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    text-align: center;
+
+
+}
+
+main h1{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    background-color: burlywood;
+    display: inline-block;
+    width: 100%;
+    height: 30%;
+    color: white;
+
+}
+
+
+
+.boton-producto{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+main h2{
+    text-align: center;
+    background-color: burlywood;
+
+}
+
+main h3{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: burlywood;
+
+}
+
+main h4{
+    text-align: center;
+    background-color: bisque;
+    padding: 50px ;
+    text-transform: uppercase;
+    
+}
+
+/* estilos de mis imagenes en el main, pantallas para celulares  ( combos.html)*/
+
+.contenedor-img , .img-tres ,.img-cuatro {
+    display: none;
+}
+
+.contenedor-img div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor-img{
+    height: 60vh;
+    margin: 1rem 3rem 3rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 29,3%);
+    row-gap: 1rem;
+
+}
+/* estilos de mi footer */
+
+footer{
+    text-align: center;
+    text-decoration: underline;
+    color: whitesmoke;
+    margin-top: 1rem;
+}
+.redes{
+    text-align:center;
+}
+
+
+
+
+    
+
+

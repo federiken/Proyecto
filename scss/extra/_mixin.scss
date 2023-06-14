@@ -1,0 +1,19 @@
+// mixin
+
+// mixin con parametros
+
+@mixin productos($widht, $height){
+    width: $widht;
+    height: $height;
+
+}
+
+// mixin sin parametros
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// extend
+

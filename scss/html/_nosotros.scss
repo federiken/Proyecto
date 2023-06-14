@@ -1,0 +1,15 @@
+// importar los archivos secundarios de sass
+
+@import "../extra/mixin";
+
+
+// productos 
+
+main.contenedor {
+    @include productos(100%, 100%);
+
+}
+
+footer .redes {
+    @include flex;
+}

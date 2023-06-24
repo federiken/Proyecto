@@ -4,6 +4,22 @@
   padding: 0;
   box-sizing: border-box; }
 
+/* estilos para los enlaces  */
+a:link {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  margin: 1rem; }
+
+a:visited {
+  color: whitesmoke; }
+
+a:active {
+  background-color: #621717;
+  padding: 1rem;
+  margin: 2rem;
+  text-shadow: 13px 13px 13px black; }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
@@ -19,6 +35,11 @@ header {
   padding: 20px; }
   header .nav-color {
     background-color: #621717; }
+  header header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center; }
   header header nav ul li {
     display: inline-block;
     margin-left: 30px;
@@ -39,77 +60,60 @@ main {
   align-items: center;
   text-align: center;
   gap: 20px; }
-  main .contenedor, main .contenedor ul li {
+  main .contenedor {
     height: 100%;
     width: 100%;
     align-items: center;
     background-image: url("../img/chocolina.jpeg");
     background-size: cover; }
-  main .contenedor ul li {
-    margin: 30px;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    justify-content: justify;
-    align-items: justify;
-    text-align: center;
-    gap: 20px; }
-  main main div p {
-    text-align: center;
-    color: #120d0d;
-    background-color: rgba(248, 245, 245, 0.765);
-    font-weight: bold;
-    font-size: 16px;
-    margin: 30px; }
-  main main div ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
-    text-align: center; }
-  main main h1 {
-    text-align: center;
-    text-decoration: underline;
-    text-transform: capitalize;
-    background-color: burlywood;
-    display: inline-block;
-    width: 100%;
-    height: 30%;
-    color: white; }
+    main .contenedor ul li {
+      list-style: none;
+      margin: 30px;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      justify-content: justify;
+      align-items: justify;
+      text-align: center;
+      gap: 20px; }
+      main .contenedor ul li div p {
+        text-align: center;
+        color: #120d0d;
+        background-color: rgba(248, 245, 245, 0.765);
+        font-weight: bold;
+        font-size: 16px;
+        margin: 30px; }
+        main .contenedor ul li div p div ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          list-style: none;
+          text-align: center; }
+          main .contenedor ul li div p div ul h1 {
+            text-align: center;
+            text-decoration: underline;
+            text-transform: capitalize;
+            background-color: burlywood;
+            display: inline-block;
+            width: 100%;
+            height: 30%;
+            color: white; }
   main .boton-producto {
     text-align: center;
     text-decoration: underline;
     text-transform: uppercase; }
-  main main h2 {
-    text-align: center;
-    background-color: burlywood; }
-  main main h3 {
-    text-align: center;
-    text-transform: uppercase;
-    background-color: burlywood; }
-  main main h4 {
-    text-align: center;
-    background-color: bisque;
-    padding: 50px;
-    text-transform: uppercase; }
-  main .contenedor-img div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  main .contenedor-img, main .img-tres, main .img-cuatro {
-    display: none; }
-  main .contenedor-img {
-    height: 60vh;
-    margin: 1rem 3rem 3rem 3rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 29, 3%);
-    row-gap: 1rem;
+  main .main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 2rem; }
+  main .main section img {
+    width: 30%;
     object-fit: cover; }
   main .carousel-item {
-    height: 70vh;
-    width: 70vh; }
+    height: 90vh;
+    width: 90vh; }
 
 footer {
   text-align: center;
